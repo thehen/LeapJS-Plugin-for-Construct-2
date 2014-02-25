@@ -81,15 +81,15 @@ AddCondition( 3, 	cf_trigger, 	"On any finger exit frame", 	"Fingers", 	"On any 
 
 
 
-AddExpression(	0, 	ef_return_number, 	"Hand X position", 							"Hand", 	"HandX", 		"Get the primary hand X position.");
-AddExpression(	1, 	ef_return_number, 	"Hand Y position", 							"Hand", 	"HandY", 		"Get the primary hand Y position.");
+AddExpression(	0, 	ef_deprecated, 		"Hand X position", 							"Hand", 	"HandX", 		"Get the primary hand X position.");
+AddExpression(	1, 	ef_deprecated, 		"Hand Y position", 							"Hand", 	"HandY", 		"Get the primary hand Y position.");
 AddExpression(	2, 	ef_deprecated, 		"Hand Z position", 							"Hand", 	"HandZ", 		"Get the primary hand Z position.");
 
 AddNumberParam(	"Index", "Zero-based index of the hand to get.");
-AddExpression(	3, 	ef_return_number, 	"Hand X position at zero-based index", 		"Hand", 	"HandXAt", 		"Get a hand X co-ordinate from a zero-based index of the touch.");
+AddExpression(	3, 	ef_deprecated, 		"Hand X position at zero-based index", 		"Hand", 	"HandXAt", 		"Get a hand X co-ordinate from a zero-based index of the touch.");
 
 AddNumberParam( "Index", "Zero-based index of the hand to get.");
-AddExpression(	4, 	ef_return_number, 	"Hand Y position at zero-based index", 		"Hand", 	"HandYAt", 		"Get a hand Y co-ordinate from a zero-based index of the touch.");
+AddExpression(	4, 	ef_deprecated, 		"Hand Y position at zero-based index", 		"Hand", 	"HandYAt", 		"Get a hand Y co-ordinate from a zero-based index of the touch.");
 
 AddNumberParam( "Index", "Zero-based index of the hand to get.");
 AddExpression(	5, 	ef_deprecated, 		"Hand Z position at zero-based index", 		"Hand", 	"HandZAt", 		"Get a hand Z co-ordinate from a zero-based index of the touch.");
@@ -109,15 +109,15 @@ AddExpression(	10, ef_deprecated, 		"Hand Z position at ID", 					"Hand", 	"Hand
 
 AddExpression(	11, ef_return_number, 	"Number of current fingers", 				"Fingers", 	"FingerCount", 	"Get the number of current fingers.");
 
-AddExpression(	12, ef_return_number, 	"Finger X position", 						"Fingers", 	"FingerX", 		"Get the primary finger X position.");
-AddExpression(	13, ef_return_number, 	"Finger Y position", 						"Fingers", 	"FingerY", 		"Get the primary finger Y position.");
+AddExpression(	12, ef_deprecated, 		"Finger X position", 						"Fingers", 	"FingerX", 		"Get the primary finger X position.");
+AddExpression(	13, ef_deprecated, 		"Finger Y position", 						"Fingers", 	"FingerY", 		"Get the primary finger Y position.");
 AddExpression(	14, ef_deprecated, 		"Finger Z position", 						"Fingers", 	"FingerZ", 		"Get the primary finger Z position.");
 
 AddNumberParam(	"Index", "Zero-based index of the finger to get.");
-AddExpression(	15, ef_return_number, 	"Finger X position at zero-based index", 	"Fingers", 	"FingerXAt", 	"Get a finger X co-ordinate from a zero-based index of the touch.");
+AddExpression(	15, ef_deprecated, 		"Finger X position at zero-based index", 	"Fingers", 	"FingerXAt", 	"Get a finger X co-ordinate from a zero-based index of the touch.");
 
 AddNumberParam( "Index", "Zero-based index of the finger to get.");
-AddExpression(	16, ef_return_number, 	"Finger Y position at zero-based index", 	"Fingers", 	"FingerYAt", 	"Get a finger Y co-ordinate from a zero-based index of the touch.");
+AddExpression(	16, ef_deprecated, 		"Finger Y position at zero-based index", 	"Fingers", 	"FingerYAt", 	"Get a finger Y co-ordinate from a zero-based index of the touch.");
 
 AddNumberParam( "Index", "Zero-based index of the finger to get.");
 AddExpression(	17, ef_deprecated, 		"Finger Z position at zero-based index", 	"Fingers", 	"FingerZAt", 	"Get a finger Z co-ordinate from a zero-based index of the touch.");

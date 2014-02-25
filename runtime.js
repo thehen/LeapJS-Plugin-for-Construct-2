@@ -258,24 +258,13 @@ cr.plugins_.Leap = function(runtime)
 	{
 		return true;
 	};
-
-	// ... other conditions here ...
 	
 	pluginProto.cnds = new Cnds();
 	
 	//////////////////////////////////////
 	// Actions
 	function Acts() {};
-
-	// the example action
-	Acts.prototype.MyAction = function (myparam)
-	{
-		// alert the message
-		alert(myparam);
-	};
-	
-	// ... other actions here ...
-	
+		
 	pluginProto.acts = new Acts();
 	
 	//////////////////////////////////////
@@ -295,40 +284,6 @@ cr.plugins_.Leap = function(runtime)
 		ret.set_float(lastHandID);
 	};
 
-	Exps.prototype.HandX = function (ret)
-	{	
-		if (hands.data[0])
-			ret.set_float(hands.data[0].posX);
-		else
-			ret.set_float(0);
-	};
-
-	Exps.prototype.HandY = function (ret)
-	{
-		if (hands.data[0])
-			ret.set_float(hands.data[0].posY);
-		else
-			ret.set_float(0);
-	};
-
-	Exps.prototype.HandXAt = function (ret, index)
-	{	
-		index = Math.floor(index);
-		if (index >= 0 && index <= Object.keys(hands.data).length)
-			ret.set_float(hands.data[index].posX);
-		else
-			ret.set_float(0);
-	};	
-
-	Exps.prototype.HandYAt = function (ret, index)
-	{
-		index = Math.floor(index);
-		if (index >= 0 && index <= Object.keys(hands.data).length)
-			ret.set_float(hands.data[index].posY);
-		else
-			ret.set_float(0);
-	};	
-
 	Exps.prototype.HandXForID = function (ret, id)
 	{
 		if (hands.data[id]) {
@@ -346,40 +301,6 @@ cr.plugins_.Leap = function(runtime)
 			ret.set_float(0);
 		}
 	};
-
-	Exps.prototype.FingerX = function (ret)
-	{	
-		if (fingers.data[0])
-			ret.set_float(fingers.data[0].posX);
-		else
-			ret.set_float(0);
-	};
-
-	Exps.prototype.FingerY = function (ret)
-	{	
-		if (fingers.data[0])
-			ret.set_float(fingers.data[0].posY);
-		else
-			ret.set_float(0);
-	};
-
-	Exps.prototype.FingerXAt = function (ret, index)
-	{	
-		index = Math.floor(index);
-		if (index >= 0 && index <= Object.keys(fingers.data).length)
-			ret.set_float(fingers.data[index].posX);
-		else
-			ret.set_float(0);
-	};	
-
-	Exps.prototype.FingerYAt = function (ret, index)
-	{
-		index = Math.floor(index);
-		if (index >= 0 && index <= Object.keys(fingers.data).length)
-			ret.set_float(fingers.data[index].posY);
-		else
-			ret.set_float(0);
-	};	
 
 	Exps.prototype.FingerXForID = function (ret, id)
 	{
